@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz Interactif : HTML / CSS / JavaScript</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HTML, CSS & JavaScript</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="quiz-container">
-    <h1>Quiz Interactif : HTML / CSS / JavaScript</h1>
-
-    <div id="quiz">
-      <p id="question"></p>
-      <div id="answers"></div>
-      <p id="timer"></p>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>Quiz HTML, CSS & JavaScript</h1>
+            <div class="timer">Temps: <span id="time">00:00</span></div>
+        </div>
+        
+        <div class="quiz-body">
+            <!-- Écran d'accueil -->
+            <div id="welcome-screen" class="welcome-screen">
+                <h2>Bienvenue au Quiz Interactif</h2>
+                <p>Testez vos connaissances en HTML, CSS et JavaScript avec ce quiz de 15 questions à choix multiples.</p>
+                <p>Vous avez 15 minutes pour répondre à toutes les questions. Bonne chance !</p>
+                <button id="start-btn" class="btn btn-start">Commencer le Quiz</button>
+            </div>
+            
+            <!-- Écran des questions -->
+            <div id="question-screen" class="question-screen hidden">
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+                <div class="question-number">Question <span id="current-question">1</span>/15</div>
+                <div id="question-text" class="question-text"></div>
+                <div id="options-container" class="options-container"></div>
+                <div class="navigation">
+                    <button id="prev-btn" class="btn">Précédent</button>
+                    <button id="next-btn" class="btn">Suivant</button>
+                    <button id="submit-btn" class="btn hidden">Terminer</button>
+                </div>
+            </div>
+            
+            <!-- Écran des résultats -->
+            <div id="results-screen" class="results-screen hidden">
+                <h2>Résultats du Quiz</h2>
+                <div class="score" id="final-score">0/15</div>
+                <p id="score-message"></p>
+                
+                <div class="results-details" id="results-details"></div>
+                
+                <div class="navigation">
+                    <button id="restart-btn" class="btn">Recommencer</button>
+                    <button id="save-btn" class="btn">Sauvegarder</button>
+                </div>
+                
+                <div id="saved-results" class="hidden">
+                    <h3>Résultats Sauvegardés</h3>
+                    <div id="scores-list"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <button id="next-btn">Suivant</button>
-
-    <div id="result"></div>
-    <div id="score-storage"></div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
