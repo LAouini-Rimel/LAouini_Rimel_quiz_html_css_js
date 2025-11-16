@@ -209,3 +209,59 @@ body {
     padding: 15px;
     border-bottom: 1px solid #eee;
 }
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-question {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.result-answer {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.correct-icon, .incorrect-icon {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.correct-icon {
+    color: var(--success-color);
+}
+
+.incorrect-icon {
+    color: var(--danger-color);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .quiz-body {
+        padding: 20px;
+    }
+    
+    .question-text {
+        font-size: 1.1rem;
+    }
+    
+    .timer {
+        position: static;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
