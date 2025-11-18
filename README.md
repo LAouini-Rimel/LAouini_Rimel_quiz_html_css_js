@@ -16,7 +16,6 @@ laouini_rimel_quiz/
 ├── style.css
 ├── script.js
 ├── README.md
-└── (autres fichiers...)
 
 text
 
