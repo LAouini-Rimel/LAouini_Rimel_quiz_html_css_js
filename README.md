@@ -19,7 +19,7 @@ Un quiz interactif et dynamique développé dans le cadre d'un projet d'apprenti
 - ✅ Écran de résultats final avec récapitulatif
 
 ## 🌐 Lien vers la démo
-[Voir le quiz en ligne](https://laouini-rimel.github.io/LAouini_Rimel_quiz_html.css.js/)
+[Voir le quiz en ligne](https://laouini-rimel.github.io/LAouini_Rimel_quiz_html_css_js/)
 
 ## 💡 Nouveautés explorées
 ### Apprentissages techniques :
